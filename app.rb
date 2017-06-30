@@ -10,3 +10,10 @@ also_reload('lib/**/*.rb')
  get('/form') do
    erb(:form)
  end
+
+ get('/count') do
+   phrase = params.fetch('phrase')
+   word = params.fetch('word')
+   count = phrase.count(word)
+   erb(:count)
+ end
