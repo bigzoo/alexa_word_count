@@ -4,7 +4,7 @@ class String
     split = self.split(' ')
     split.each() do |word|
       if word==word_to_count
-        counter+=
+        counter = counter + 1
       end
     end
     counter
