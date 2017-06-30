@@ -1,4 +1,4 @@
-<h1 class="bg-info text-center">Alexa Here again!</h1>
+<h1 class="bg-info text-center">Alexa Here again!<i class="em em-blush"></i></h1>
 <h2 class="text-center">Thanks for coming on this awesome journey with me!</h2>
   <form action='/count'>
     <div class="form-group">
@@ -10,8 +10,8 @@
     <div class="form-group">
       <label for="word">So what exactly am I looking for?</label>
       <br>
-      <small class="text-muted">No spaces please! I don't do spaces or any other funny characters as a matter of fact!</small>
-      <input id="word" name="word" class="form-control" type="text" pattern="[a-zA-Z]+" required>
+      <small class="text-muted">No spaces please<i class="em em-x"></i>! I don't do spaces or any other funny characters as a matter of fact!<i class="em em-smirk"></i></small>
+      <input id="word" name="word" class="form-control" type="text" pattern="[a-zA-Z0-9]+" required>
     </div>
-    <button type="submit" class="btn btn-success">Word!</button>
+    <button type="submit" class="btn btn-success">Count!</button>
   </form>
