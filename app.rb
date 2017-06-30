@@ -1,6 +1,6 @@
 require ('sinatra')
 require ('sinatra/reloader')
-require ('./lib/scrabble')
+#require ('./lib/scrabble')
 also_reload('lib/**/*.rb')
 
 get('/') do
