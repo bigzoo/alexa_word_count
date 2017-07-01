@@ -13,5 +13,12 @@
       <small class="text-muted">No spaces please<i class="em em-x"></i>! I don't do spaces or any other funny characters as a matter of fact!<i class="em em-smirk"></i></small>
       <input id="word" name="word" class="form-control" type="text" pattern="[a-zA-Z0-9]+" required>
     </div>
+    <div class="well">
+      <p>Advanced Settings</p>
+      <label for="partial">Should I detect partial words?</label>
+      <input type="checkbox" name="partial" id="partial" value="false">
+      <br>
+      <small class="text-muted">When enabled I will count 'cat' if it is in 'catacombs'</small>
+    </div>
     <button type="submit" class="btn btn-success">Count!</button>
   </form>
