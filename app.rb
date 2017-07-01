@@ -14,7 +14,8 @@ also_reload('lib/**/*.rb')
  get('/count') do
    phrase = params.fetch('phrase')
    word = params.fetch('word')
+   partial = params.fetch('partial')
    @word = word
-   @count = phrase.count(word)
+   @count = phrase.count(word,partial)
    erb(:count)
  end
