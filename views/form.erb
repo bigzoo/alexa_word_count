@@ -14,11 +14,13 @@
       <input id="word" name="word" class="form-control" type="text" pattern="[a-zA-Z0-9]+" required>
     </div>
     <div class="well">
-      <p>Advanced Settings</p>
-      <label for="partial">Should I detect partial words?</label>
-      <input type="checkbox" name="partial" id="partial" value="false">
-      <br>
-      <small class="text-muted">When enabled I will count 'cat' if it is in 'catacombs'</small>
+      <div class="form-group">
+        <p>Advanced Settings</p>
+        <label for="partial">Should I detect partial words?</label>
+        <input type="checkbox" name="partial" id="partial">
+        <br>
+        <small class="text-muted">When enabled I will count 'cat' if it is in 'catacombs'</small>
+      </div>
     </div>
     <button type="submit" class="btn btn-success">Count!</button>
   </form>
